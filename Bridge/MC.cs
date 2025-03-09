@@ -7,37 +7,36 @@ using System.Threading.Tasks;
 namespace Bridge
 {
     /// <summary>
-    /// Represents a car vehicle with license plate and date properties.
+    /// Represents MotorCycle (MC) vehicle with license plate and date properties.
     /// </summary>
-    public class Car
+    public class MC
     {
         /// <summary>
-        /// Gets or sets the cars license plate.
+        /// Gets or sets the Motocycle license plate.
         /// </summary>
         public string Licenseplate { get; set; }
 
         /// <summary>
-        /// Gets or sets the date associated with the car.
+        /// Get or sets the date associated with the Motorcycle.
         /// </summary>
         public DateTime Date { get; set; }
 
         /// <summary>
-        /// Returns the fixed price for crossing the bridge with a Car.
+        /// Returns the fixed price for crossing the bridge with a Motorcycle.
         /// </summary>
-        /// <returns>Fixed price of 230.</returns>
+        /// <returns>The fixed price of 120 kr.</returns>
         public double Price()
         {
-            return 230;
+            return 120;
         }
 
         /// <summary>
         /// Returns the type of vehicle.
         /// </summary>
-        /// <returns>Returns the string "Car".</returns>
-        public string VehicleType()
+        /// <returns>Returns the string "MC".</returns>
+        public string Vehicle()
         {
-            return "Car";
+            return "MC";
         }
-
     }
 }
