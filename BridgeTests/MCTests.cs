@@ -21,7 +21,7 @@ namespace BridgeTests
         }
 
         [TestMethod]
-        public void Vehicle_ShouldReturnMC ()
+        public void Vehicle_ShouldReturnMC()
         {
             // Arrange
             MC mc = new MC();
