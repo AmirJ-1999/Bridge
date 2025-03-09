@@ -1,6 +1,5 @@
 using Bridge;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace BridgeTests
 {
@@ -9,7 +8,6 @@ namespace BridgeTests
     {
         [TestMethod]
         public void Price_ShouldReturnFixedPrice()
-
         {
             // Arrange
             Car car = new Car();

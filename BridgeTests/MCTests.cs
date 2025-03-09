@@ -8,7 +8,6 @@ namespace BridgeTests
     {
         [TestMethod]
         public void Price_ShouldReturnFixedPrice()
-
         {
             // Arrange
             MC mc = new MC();
@@ -21,13 +20,13 @@ namespace BridgeTests
         }
 
         [TestMethod]
-        public void Vehicle_ShouldReturnMC()
+        public void VehicleType_ShouldReturnMC()
         {
             // Arrange
             MC mc = new MC();
 
             // Act
-            string type = mc.Vehicle();
+            string type = mc.VehicleType();
 
             // Assert
             Assert.AreEqual("MC", type);

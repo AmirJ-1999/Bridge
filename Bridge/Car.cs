@@ -1,31 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bridge
 {
     /// <summary>
-    /// Represents a car vehicle with license plate and date properties.
+    /// Represents a car vehicle.
     /// </summary>
-    public class Car
+    public class Car : Vehicle
     {
-        /// <summary>
-        /// Gets or sets the cars license plate.
-        /// </summary>
-        public string Licenseplate { get; set; }
-
-        /// <summary>
-        /// Gets or sets the date associated with the car.
-        /// </summary>
-        public DateTime Date { get; set; }
-
         /// <summary>
         /// Returns the fixed price for crossing the bridge with a Car.
         /// </summary>
-        /// <returns>Fixed price of 230.</returns>
-        public double Price()
+        /// <returns>Fixed price of 230 kr.</returns>
+        public override double Price()
         {
             return 230;
         }
@@ -34,10 +20,9 @@ namespace Bridge
         /// Returns the type of vehicle.
         /// </summary>
         /// <returns>Returns the string "Car".</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
-
     }
 }
