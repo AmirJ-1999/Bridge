@@ -3,14 +3,25 @@
 namespace Bridge
 {
     /// <summary>
-    /// Abstract class representing a general vehicle.
+    /// Abstract class represents a generic vehicle.
     /// </summary>
     public abstract class Vehicle
     {
+        private string _licenseplate;
+
         /// <summary>
-        /// Gets or sets the vehicle's license plate.
+        /// Gets or sets the vehicle's license plate. Cannot exceed 7 characters.
         /// </summary>
-        public string Licenseplate { get; set; }
+        public string Licenseplate
+        {
+            get => _licenseplate;
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("License plate cannot exceed 7 characters.");
+                _licenseplate = value;
+            }
+        }
 
         /// <summary>
         /// Gets or sets the date associated with the vehicle crossing the bridge.
@@ -20,13 +31,11 @@ namespace Bridge
         /// <summary>
         /// Returns the price for crossing the bridge.
         /// </summary>
-        /// <returns>Price as a double.</returns>
         public abstract double Price();
 
         /// <summary>
-        /// Returns the vehicle type as a string.
+        /// Returns the type of the vehicle.
         /// </summary>
-        /// <returns>Vehicle type.</returns>
         public abstract string VehicleType();
     }
 }
