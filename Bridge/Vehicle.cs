@@ -3,14 +3,14 @@
 namespace Bridge
 {
     /// <summary>
-    /// Abstract class represents a generic vehicle.
+    /// Represents a generic vehicle.
     /// </summary>
     public abstract class Vehicle
     {
         private string _licenseplate;
 
         /// <summary>
-        /// Gets or sets the vehicle's license plate. Cannot exceed 7 characters.
+        /// Gets or sets the license plate (max 7 chars).
         /// </summary>
         public string Licenseplate
         {
@@ -18,24 +18,32 @@ namespace Bridge
             set
             {
                 if (value.Length > 7)
-                    throw new ArgumentException("License plate cannot exceed 7 characters.");
+                    throw new ArgumentException("Licenseplate cannot exceed 7 characters.");
                 _licenseplate = value;
             }
         }
 
         /// <summary>
-        /// Gets or sets the date associated with the vehicle crossing the bridge.
+        /// Date of the bridge crossing.
         /// </summary>
         public DateTime Date { get; set; }
 
         /// <summary>
-        /// Returns the price for crossing the bridge.
+        /// Indicates whether Brobizz discount applies.
         /// </summary>
-        public abstract double Price();
+        public bool Brobizz { get; set; } = false;
 
         /// <summary>
-        /// Returns the type of the vehicle.
+        /// Calculates the price with optional Brobizz discount.
         /// </summary>
+        /// <returns>Price as double.</returns>
+        public double GetPriceWithDiscount()
+        {
+            double price = Price();
+            return Brobizz ? price * 0.90 : price;
+        }
+
+        public abstract double Price();
         public abstract string VehicleType();
     }
 }
