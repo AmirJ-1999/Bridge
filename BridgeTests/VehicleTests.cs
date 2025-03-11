@@ -1,15 +1,18 @@
 ﻿using Bridge;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace BridgeTests
 {
     [TestClass]
     public class VehicleTests
     {
+        /// <summary>
+        /// Test that the Licenseplate property throws an exception 
+        /// when the assigned license plate exceeds 7 characters.
+        /// </summary>
         [TestMethod]
-        // Test that the Licenseplate property can be set and retrieved.
         [ExpectedException(typeof(ArgumentException))]
-        // Test that the Licenseplate property throws an exception when the license plate is longer than 7 characters.
         public void Licenseplate_WhenLongerThan7Characters_ShouldThrowException()
         {
             // Arrange

@@ -6,8 +6,10 @@ namespace BridgeTests
     [TestClass]
     public class CarTests
     {
+        /// <summary>
+        /// Test that the Price method returns the fixed price of 230 kr.
+        /// </summary>
         [TestMethod]
-        // Test that the Price method returns the fixed price of 230 kr.
         public void Price_ShouldReturnFixedPrice()
         {
             // Arrange
@@ -20,8 +22,10 @@ namespace BridgeTests
             Assert.AreEqual(230, price);
         }
 
+        /// <summary>
+        /// Test that the VehicleType method correctly returns "Car".
+        /// </summary>
         [TestMethod]
-        // Test that the VehicleType method returns "Car".
         public void VehicleType_ShouldReturnCar()
         {
             // Arrange
@@ -34,8 +38,10 @@ namespace BridgeTests
             Assert.AreEqual("Car", type);
         }
 
+        /// <summary>
+        /// Test that the GetPriceWithDiscount method applies the 10% Brobizz discount correctly.
+        /// </summary>
         [TestMethod]
-        // Test that the GetPriceWithDiscount method returns the price with the Brobizz discount applied.
         public void GetPriceWithDiscount_ShouldReturnPriceWithBrobizzDiscount()
         {
             // Arrange
@@ -44,7 +50,7 @@ namespace BridgeTests
             // Act
             double discountedPrice = car.GetPriceWithDiscount();
 
-            // Assert (with delta tolerance)
+            // Assert
             Assert.AreEqual(207, discountedPrice, 0.001);
         }
     }
