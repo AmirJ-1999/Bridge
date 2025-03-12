@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeTests", "BridgeTests\BridgeTests.csproj", "{05E11A9B-948E-4D0F-BB7E-0709ACD70841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{205D7AF8-E7FA-48DF-8563-5BF5B0440035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{205D7AF8-E7FA-48DF-8563-5BF5B0440035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTicketLibrary", "OresundbronTicketLibrary\OresundbronTicketLibrary.csproj", "{6E7A3004-1C3A-4124-9265-C210396444DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{205D7AF8-E7FA-48DF-8563-5BF5B0440035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{205D7AF8-E7FA-48DF-8563-5BF5B0440035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{205D7AF8-E7FA-48DF-8563-5BF5B0440035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7A3004-1C3A-4124-9265-C210396444DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7A3004-1C3A-4124-9265-C210396444DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7A3004-1C3A-4124-9265-C210396444DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7A3004-1C3A-4124-9265-C210396444DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

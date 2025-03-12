@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="T:Bridge.Car">
+            <summary>
+            Represents a car vehicle.
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.Price">
+            <summary>
+            Returns the fixed price for crossing the bridge with a Car.
+            </summary>
+            <returns>Fixed price of 230 kr.</returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Returns the type of vehicle.
+            </summary>
+            <returns>Returns the string "Car".</returns>
+        </member>
+        <member name="T:Bridge.MC">
+            <summary>
+            Represents a Motorcycle (MC) vehicle.
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.Price">
+            <summary>
+            Returns the fixed price for crossing the bridge with an MC.
+            </summary>
+            <returns>The fixed price of 120 kr.</returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Returns the type of vehicle.
+            </summary>
+            <returns>Returns the string "MC".</returns>
+        </member>
+        <member name="T:Bridge.Vehicle">
+            <summary>
+            Represents a generic vehicle.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Licenseplate">
+            <summary>
+            Gets or sets the license plate (max 7 chars).
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Date">
+            <summary>
+            Date of the bridge crossing.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Brobizz">
+            <summary>
+            Indicates whether Brobizz discount applies.
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.GetPriceWithDiscount">
+            <summary>
+            Calculates the price with optional Brobizz discount.
+            </summary>
+            <returns>Price as double.</returns>
+        </member>
+    </members>
+</doc>

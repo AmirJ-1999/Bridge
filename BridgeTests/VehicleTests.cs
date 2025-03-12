@@ -19,7 +19,7 @@ namespace BridgeTests
             Vehicle car = new Car();
 
             // Act
-            car.Licenseplate = "12345678"; // 8 characters, exceeds the limit of 7
+            car.Licenseplate = "88888888"; // 8 characters, exceeds the limit of 7
 
             // Assert is handled by ExpectedException attribute
         }
